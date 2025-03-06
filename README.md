@@ -61,9 +61,9 @@ Untuk menggunakan Oh My Posh setiap kali membuka Git Bash, kita perlu menambahka
    ```
 2. Tambahkan baris berikut di bagian paling bawah:
    ```bash
-   eval "$(oh-my-posh init bash --config ~/blue-owl.omp.json)"
+   export PATH=$PATH:/c/Users/Lenovo/AppData/Local/Programs/oh-my-posh/bin
+   eval "$(oh-my-posh init bash --config 'C:/Users/Lenovo/AppData/Local/Programs/oh-my-posh/themes/atomic.omp.json')"
    ```
-   - **`blue-owl.omp.json`** adalah tema yang digunakan. Anda bisa mengganti dengan tema lain nanti.
 3. Simpan perubahan:
    - Tekan **`Ctrl + X`**, lalu **`Y`**, lalu **`Enter`**.
 
@@ -117,7 +117,8 @@ Oh My Posh menggunakan **Nerd Fonts** untuk menampilkan ikon dengan benar.
 Untuk mengubah tema, edit **`.bashrc`** dan ganti bagian ini:
 
 ```bash
-eval "$(oh-my-posh init bash --config ~/themes/nama-tema.omp.json)"
+export PATH=$PATH:/c/Users/Lenovo/AppData/Local/Programs/oh-my-posh/bin
+eval "$(oh-my-posh init bash --config 'C:/Users/Lenovo/AppData/Local/Programs/oh-my-posh/themes/nama-tema.omp.json')"
 ```
 
 Lalu, jalankan:
